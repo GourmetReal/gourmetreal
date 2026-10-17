@@ -240,7 +240,7 @@
 
 .site-logo img {
     display: block;
-    width: 180px;
+    width: 430px;
     height: auto;
 }
 
@@ -1473,6 +1473,7 @@ font-size:13.5px;
 
     flex-direction: column;
 }
+
 
 .footer-extra p {
 
