@@ -1081,16 +1081,27 @@ border-radius:2px;               /* casi recto: estética sobria del sello */
 padding:40px 34px 36px;
 }
 
-/* Sello: elemento de marca (plano, dos colores). Firma visual de la sección. */
-.cotiza-sello{
-width:56px; height:56px; margin:0 auto 20px;
-border:2px solid var(--oro);
-border-radius:50%;
-display:flex; align-items:center; justify-content:center;
-color:var(--oro);
-font-family:'Cormorant Garamond',serif;
-font-weight:600; font-size:22px; letter-spacing:1px;
+
+
+
+/* Sello de Gourmet Real */
+.cotiza-sello {
+    display: block;
+    width: 90px;
+    height: 90px;
+    object-fit: contain;
+    margin: 0 auto 20px;
 }
+
+.cotiza-nombre {
+    display: block;
+    width: 180px;
+    max-width: 100%;
+    height: auto;
+    object-fit: contain;
+    margin: 0 auto 20px;
+}
+
 
 .cotiza-eyebrow{
 text-align:center;
