@@ -526,6 +526,11 @@
    ========================================= */
 
 
+#container {
+    position: relative;
+    width: 100%;
+    overflow: hidden;
+}
 
 #container > img {
     display: block;
@@ -535,30 +540,35 @@
     object-position: center 30%;
 }
 
-.text-block h1{
-    font-family: "dancing script";
-    color: var(--papel);
-    font-size: 3.5em;
-    font-weight: 100;
-    text-align: center;
-    
-}
 .text-block {
     position: absolute;
     left: 5%;
-    right: 70%;
     bottom: 5%;
-    background-color:rgba(0, 0, 0, 0.507);
+    width: min(90%, 650px);
+    box-sizing: border-box;
+    padding: 24px 28px;
+    background: rgba(12, 11, 9, 0.62);
     color: var(--papel);
-    padding: 25px 35px;
+    text-align: center;
+    overflow-wrap: break-word;
+    
+    
+}
+.text-block h1 {
+    font-family: 'Dancing Script', cursive;
+    font-weight: 400;
+    margin: 0 0 14px;
+    font-size: clamp(1.8rem, 4vw, 3.2rem);
+    line-height: 1.2;
 }
 
-  .text-block p{
-    text-align: center;    
-    font-size: 1.4em;   
-    font-family: "inter";
-    font-weight: lighter;
-  }
+.text-block p {
+    margin: 0;
+    font-size: 1rem;
+    line-height: 1.6;
+}
+
+
 
   .wedding-grid{
     display: grid;
@@ -1275,11 +1285,7 @@ font-size:13.5px;
 .site-footer {
     width: 100%;
     margin-top: 80px;
-    
-
     background: #F0E5D2;
-    );
-
     color: var(--paragraph);
 }
 
